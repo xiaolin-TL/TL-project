@@ -8,57 +8,33 @@ TEST STACK: https://staging.api.trustlab.com
 
 ## baseline
 Status codes: {200: 4} -> {200: 4}
-Average latency: 4.892 -> 8.789
-#### Misinformation at Threshold 3
+Average latency: 5.395 -> 6.973
+#### Misinformation
 | Endpoint   |   Threshold |   Precision |   Recall |   TP |   FP |   TN |   FN |
 |------------|-------------|-------------|----------|------|------|------|------|
-| base       |           3 |           1 |        1 |    3 |    0 |    3 |    0 |
-| test       |           3 |           1 |        1 |    3 |    0 |    3 |    0 |
+| base       |           3 |         0.5 |      0.5 |    1 |    1 |    1 |    1 |
+| test       |           3 |         0.5 |      0.5 |    1 |    1 |    1 |    1 |
+| base       |           4 |         1   |      0.5 |    1 |    0 |    1 |    1 |
+| test       |           4 |         1   |      0.5 |    1 |    0 |    1 |    1 |
+| base       |           5 |         1   |      0.5 |    1 |    0 |    1 |    1 |
+| test       |           5 |         1   |      0.5 |    1 |    0 |    1 |    1 |
 
-#### Misinformation at Threshold 4
-| Endpoint   |   Threshold |   Precision |   Recall |   TP |   FP |   TN |   FN |
-|------------|-------------|-------------|----------|------|------|------|------|
-| base       |           4 |           1 | 0.666667 |    2 |    0 |    2 |    1 |
-| test       |           4 |           1 | 0.666667 |    2 |    0 |    2 |    1 |
-
-#### Misinformation at Threshold 5
-| Endpoint   |   Threshold |   Precision |   Recall |   TP |   FP |   TN |   FN |
-|------------|-------------|-------------|----------|------|------|------|------|
-| base       |           5 |           1 | 0.666667 |    2 |    0 |    2 |    1 |
-| test       |           5 |           1 | 0.666667 |    2 |    0 |    2 |    1 |
-
-#### Objectionable at Threshold 3
+#### Objectionable
 | Endpoint   |   Threshold |   Precision |   Recall | TP   | FP   | TN   | FN   |
 |------------|-------------|-------------|----------|------|------|------|------|
 | base       |           3 |           0 |        0 |      |      |      |      |
 | test       |           3 |           0 |        0 |      |      |      |      |
-
-#### Objectionable at Threshold 4
-| Endpoint   |   Threshold |   Precision |   Recall | TP   | FP   | TN   | FN   |
-|------------|-------------|-------------|----------|------|------|------|------|
 | base       |           4 |           0 |        0 |      |      |      |      |
 | test       |           4 |           0 |        0 |      |      |      |      |
-
-#### Objectionable at Threshold 5
-| Endpoint   |   Threshold |   Precision |   Recall | TP   | FP   | TN   | FN   |
-|------------|-------------|-------------|----------|------|------|------|------|
 | base       |           5 |           0 |        0 |      |      |      |      |
 | test       |           5 |           0 |        0 |      |      |      |      |
 
-#### Controversial at Threshold 3
+#### Controversial
 | Endpoint   |   Threshold |   Precision |   Recall | TP   | FP   | TN   | FN   |
 |------------|-------------|-------------|----------|------|------|------|------|
 | base       |           3 |           0 |        0 |      |      |      |      |
 | test       |           3 |           0 |        0 |      |      |      |      |
-
-#### Controversial at Threshold 4
-| Endpoint   |   Threshold |   Precision |   Recall | TP   | FP   | TN   | FN   |
-|------------|-------------|-------------|----------|------|------|------|------|
 | base       |           4 |           0 |        0 |      |      |      |      |
 | test       |           4 |           0 |        0 |      |      |      |      |
-
-#### Controversial at Threshold 5
-| Endpoint   |   Threshold |   Precision |   Recall | TP   | FP   | TN   | FN   |
-|------------|-------------|-------------|----------|------|------|------|------|
 | base       |           5 |           0 |        0 |      |      |      |      |
 | test       |           5 |           0 |        0 |      |      |      |      |
