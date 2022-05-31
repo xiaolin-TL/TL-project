@@ -9,7 +9,7 @@ precision/recall diff                 |
 | baseline  | {}                  | 0.000% / 0.000% | 0.000% / 0.000% | 0.000% / 0.000% |
 
 ## baseline
-Status codes: {200: 4} -> {200: 4}
+Status codes: {200: 4} -> {200: 4}<br>
 Average latency: 7.656 -> 10.221
 #### Misinformation at Threshold 3
 | Endpoint   |   Precision |   Recall |   TP |   FP |   TN |   FN |
